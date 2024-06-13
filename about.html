@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>about</title>
+   
+   <!-- icon link  -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <a href="home.html" class="logo"><p><i class='bx bx-trip'></i>A | M</p></a>
+
+   <nav class="navbar">
+      <a href="home.html">home</a>
+      <a href="about.html">about</a>
+      <a href="package.html">package</a>
+      <a href="book.html">book</a>
+      <a href="login.html">Logout</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends -->
+
+
+<!-- about section starts  -->
+
+<section class="about">
+
+   <div class="image">
+      <img src="images/about-img.jpg" alt="">
+   </div>
+
+   <div class="content">
+      <h3>why choose us?</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure numquam nulla iusto corporis dolor commodi libero, vitae obcaecati optio rerum ab culpa nesciunt, earum mollitia quasi ipsam non. Aliquid, iure.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum, delectus voluptate aliquam quaerat iusto repellendus error nulla ab atque.</p>
+      <div class="icons-container">
+         <div class="icons">
+            <i class="fas fa-map"></i>
+            <span>top destinations</span>
+         </div>
+         <div class="icons">
+            <i class="fas fa-hand-holding-usd"></i>
+            <span>affordable price</span>
+         </div>
+         <div class="icons">
+            <i class="fas fa-headset"></i>
+            <span>24/7 service</span>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews">
+
+   <h1 class="heading-title"> clients reviews </h1>
+
+   <div class="reviews-slider">
+      <form action="about_review.php" method="post">
+         <div class="reviews-form">
+            <h2>Add a Review</h2>
+            <input type="text" id="reviewer-name" placeholder="Your Name" name="reviewer_name" required>
+            <textarea id="review-text" rows="4" placeholder="Your Review" name="review_text" required></textarea>
+            <div class="star-rating">
+               <input type="radio" name="rating" id="star5" value="5"><label for="star5" class="fas fa-star"></label>
+               <input type="radio" name="rating" id="star4" value="4"><label for="star4" class="fas fa-star"></label>
+               <input type="radio" name="rating" id="star3" value="3"><label for="star3" class="fas fa-star"></label>
+               <input type="radio" name="rating" id="star2" value="2"><label for="star2" class="fas fa-star"></label>
+               <input type="radio" name="rating" id="star1" value="1"><label for="star1" class="fas fa-star"></label>
+            </div>
+            <button id="add-review-btn">Add Review</button>
+         </div>
+      </form>
+      <div id="reviews-list">
+         <h2>Reviews</h2>
+         <form action="review.php" method="post"></form>
+     </div>
+   </div>
+
+</section>
+
+
+<!-- reviews section ends -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="package.html"> <i class="fas fa-angle-right"></i> package</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i> book</a>
+      </div>
+
+      <div class="box">
+         <h3>extra links</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +88015-11111-1111 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> abc@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> Dhaka, Bangladesh </a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+      <div class="box contact-box">
+         <h3>Contact Us</h3>
+         <form id="contact-form" action="submit_contact.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+         </form>
+      </div>
+
+   </div>
+
+   <div class="credit">2024 | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/review.js"></script>
+
+</body>
+</html>

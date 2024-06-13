@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-box box">
+      <header>Sign Up</header>
+      <form action="signup_action.php" method="POST">
+        <div class="form-box">
+            <div class="input-container">
+              <i class="fa fa-user icon"></i>
+              <input class="input-field" type="text" placeholder="Username" name="username" required>
+            </div>
+
+            <div class="input-container">
+              <i class="fa fa-envelope icon"></i>
+              <input class="input-field" type="email" placeholder="Email Address" name="email" required>
+            </div>
+
+            <div class="input-container">
+              <i class="fa fa-lock icon"></i>
+              <input class="input-field password" type="password" placeholder="Password" name="password" required>
+              <i class="fa fa-eye icon toggle"></i>
+            </div>
+
+            <div class="input-container">
+              <i class="fa fa-lock icon"></i>
+              <input class="input-field" type="password" placeholder="Confirm Password" name="cpass" required>
+              <i class="fa fa-eye icon"></i>
+            </div>
+        </div>
+        <center><input type="submit" name="register" id="submit" value="Signup" class="btn"></center>
+
+        <div class="links">
+          Already have an account? <a href="login.html">Signin Now</a>
+        </div>
+      </form>
+    </div>
+  </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
